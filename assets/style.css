@@ -1,0 +1,71 @@
+:root {
+  color-scheme: light dark;
+  --bg: #fff;
+  --fg: #1a1a1a;
+  --muted: #666;
+  --card-bg: #f5f5f5;
+  --card-border: #e0e0e0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a1a;
+    --fg: #eee;
+    --muted: #aaa;
+    --card-bg: #262626;
+    --card-border: #333;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 3rem 1.5rem;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  display: block;
+  padding: 1.25rem;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  background: var(--card-bg);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--muted);
+}
+
+.project-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.project-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
