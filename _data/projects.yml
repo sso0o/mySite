@@ -1,3 +1,6 @@
 - name: 당구 경로 도해
   url: https://billiards.sychoi.site
   description: 당구 경로를 시각적으로 계산해주는 도해 앱
+- name: 타로그
+  url: https://sso0o.github.io/tarolog/#/dictionary
+  description: 타로 카드 78장의 의미를 익히고 퀴즈·일지로 복습하는 학습 앱
